@@ -1,0 +1,63 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>カテゴリー選択</title>
+</head>
+
+{% extends "layout.html" %}
+{% block content %}
+<body>
+  <header>
+    <div class="header">
+<br><br><br><br><br><br><br>
+<p>One Listen News</p>
+</div>
+    </header>
+
+    <section>
+        <div class="wrap">
+          <div class="bg-image">
+            <div class="bg-mask">
+
+    <a href="/business">
+    <div class="box_category_choice"><br><br><br>
+  	<p>ビジネス</p>
+  		</div>
+      </a>
+
+    <hr color="#9e9e9e">
+    <a href="/entertain">
+    <div class="box_category_choice"><br><br><br>
+    <p>エンタメ</p>
+    </div>
+    </a>
+
+    <hr color="#9e9e9e">
+
+    <a href="/health">
+    <div class="box_category_choice"><br><br><br>
+    <p>健康</p>
+    </div>
+    </a>
+
+
+  </div>
+  </div>
+
+
+  </div>
+</section>
+
+<footer>
+<div class="copyright">
+	<p>© 2020 - Miyazaki Seminar</p>
+</div>
+</footer>
+
+  </body>
+</html>
+
+
+
+    {% endblock %}

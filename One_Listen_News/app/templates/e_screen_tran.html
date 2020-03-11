@@ -1,0 +1,73 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>ビジネス</title>
+</head>
+
+{% extends "layout.html" %}
+{% block content %}
+<body>
+  <header>
+    <div class="header">
+<br><br><br><br><br><br><br>
+<p>One Listen News</p>
+</div>
+    </header>
+
+    <section>
+          <div class="wrap1">
+            <br>
+            <div class="box3">
+              <p>{{e_menu_name}}</p>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+
+          <a href="/entertain/e_music1">
+              <div class="box2">
+                <br><br>
+              <p>{{e_title}}</p>
+              <div class="box_business_kw">
+              <p>{{e_key1}}   {{e_key2}}   {{e_key3}}   {{e_key4}}</p>
+              </div>
+          		</div>
+              </a>
+
+              <a href="/entertain/e_music2">
+              <div class="box2">
+                    <br><br>
+              <p>{{e_title2}}</p>
+              <div class="box_business_kw">
+              <p>{{e_key5}}   {{e_key6}}   {{e_key7}}   {{e_key8}}</p>
+              </div>
+              </div>
+              </a>
+
+              <a href="/entertain/e_music3">
+                <div class="box2">
+                      <br><br>
+                <p>{{e_title3}}</p>
+                <div class="box_business_kw">
+                <p>{{e_key9}}   {{e_key10}}   {{e_key11}}   {{e_key12}}</p>
+                </div>
+                </div>
+                </a>
+
+            </div>
+            </section>
+
+            <footer>
+            <div class="copyright">
+            <p>© 2020 - Miyazaki Seminar</p>
+            </div>
+            </footer>
+
+            </body>
+            </html>
+
+
+{% endblock %}

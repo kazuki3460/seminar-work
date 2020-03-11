@@ -1,0 +1,47 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>再生</title>
+</head>
+
+{% extends "layout.html" %}
+{% block content %}
+<body>
+  <header>
+    <div class="header">
+<br><br><br><br><br><br><br>
+<p>One Listen News</p>
+</div>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <div class="bg-image-play">
+          <div class="bg-mask-play">
+
+            <div class="box_play"><br><br><br>
+              <font size="5" color="#5D4037">{{em_title}}</font>
+
+                  <br><br><br>
+                <font size="2" color="#37474F">{{em_description}}</font><br><br><br><br><br>
+
+                <audio autoplay src="/static/images/e_output0.wav" controls></audio>
+                <br>
+                <br>
+                <br>
+                <font size="3" color="#5D4037"><a href="{{em_url}}">詳細はこちら</a></font><br>
+                </div>
+</div>
+</section>
+
+<footer>
+<div class="copyright">
+<p>© 2020 - Miyazaki Seminar</p>
+</div>
+</footer>
+
+</body>
+</html>
+
+{% endblock %}

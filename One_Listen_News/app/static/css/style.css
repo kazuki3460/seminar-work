@@ -1,0 +1,329 @@
+/* ==============================
+ *   Base
+ * ============================== */
+
+
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  /* font-family: "Lato", "Lucida Grande", "Meiryo", sans-serif; */
+  font-family:'Century Gothic','Futura','Noto Sans Japanese','ヒラギノ角ゴ Pro W5','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+}
+
+
+.header {
+position: relative;
+}
+
+.header p {
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+margin:0;
+padding:0;
+color:#005078;
+}
+
+.header img {
+width: 100%;
+}
+
+.bg-image {
+  position:z-index 2;
+  background:url('earphone2.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.bg-image-play {
+  background: url('earphone2.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.bg-mask {
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+}
+
+.bg-mask-play {
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+
+.box2 {
+ text-align:center ;
+    height: 200px;
+    border-style: none;
+    background-color: rgba(99,142,238,1.00);
+    margin:50px 50px 50px 50px
+}
+
+.box3 {
+ text-align:center ;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(158,158,158,0.8);
+}
+
+.box_category_choice {
+  text-align:center ;
+    height: 160px;
+    border-style: none;
+    background-color: rgba(0.5);
+}
+
+.box_category_choice:hover{
+  background-color: rgba(255,255,255,0.4);
+
+}
+
+.box_play {
+  text-align:center ;
+    height: 30px;
+    border-style: none;
+    background-color: rgba(0.7);
+}
+
+.box_play_title {
+ text-align:center ;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(0,80,120,0.8);
+    margin:50px 50px 50px 50px
+}
+.box_play_des {
+  text-align:center ;
+    height: 100px;
+    border-style: none;
+    background-color: rgb(0,80,120,0.8);
+    margin:50px 50px 50px 50px
+}
+
+.box_play_url {
+  text-align:center ;
+    height: 30px;
+    border-style: none;
+    background-color: rgb(0,80,120,0.8);
+    margin:50px 50px 50px 50px
+}
+
+.box2 p{
+color:#fff;
+font-size: x-large;
+}
+
+.box3 p{
+color:#fff;
+font-size: 15px;
+　
+}
+
+.box_category_choice p{
+color:#005078;
+font-size:40px;
+font-weight:bold;
+　
+}
+
+
+
+@media screen and (max-width: 480px) {
+ul.topnav li.right, ul.topnav li {
+float: none;
+}
+}
+
+
+
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 40px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 40px 16px 64px 16px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.h_center {
+  text-align: center;
+}
+
+.wrap h1 {
+  font-size: 40px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.wrap h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.wrap h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.wrap p {
+  margin-bottom: 16px;
+}
+
+.wrap p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .wrap p {
+      font-size: 14px;
+  }
+}
+
+
+
+
+.btn-flat-logo {
+position: relative;
+display: inline-block;
+font-weight: bold;
+padding: 0.25em 0.5em;
+text-decoration: none;
+color: #FFF;
+background: #da3c41;
+transition: .4s;
+  width: 30%;
+  height: 50px;
+text-align:center
+  display: inline-block;
+}
+
+.btn-flat-logo:hover {
+background: #da3c41;
+}
+
+
+
+
+*, *:before, *:after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.contents {
+margin-bottom: 100px;
+}
+
+
+/* タブ　タイトル枠　1 */
+.kakomi-tab1 {
+position: relative;
+margin: 3em auto;
+padding: 1.2em 1em 1em;
+width: 90%;
+background-color: #f7f7f7; /* BOX背景色 */
+border: 3px double #da3c41; /* 枠線の太さ・色 */
+}
+.title-tab1 {
+position: absolute;
+display: inline-block;
+top: -28px; /*タブ調整 */
+left: -3px; /*タブ調整 */
+padding: 0 10px;
+height: 26px;
+font-size: 18px;
+font-weight: bold;
+color: #fff; /* タイトル色 */
+background-color: #da3c41; /* タイトル背景色 */
+border: 1px solid #da3c41; /* タイトル枠線 */
+border-radius: 5px 5px 0 0;
+}
+
+
+footer {
+  position: fixed;
+bottom: 0;
+display: inline-block;
+width: 100%;
+height: 70px;
+margin: 0;
+background-color: #9E9E9E;
+box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.2);
+}
+footer .copyright {
+float: left;
+width: 60%;
+}
+footer .copyright p {
+font-size: 0.7em;
+line-height: 70px;
+padding-left: 10%;
+letter-spacing: 1px;
+color: #ffffff;
+}
+@media (max-width: 480px) {
+.contents {
+margin-bottom: 200px;
+}
+footer {
+height: auto;
+}
+footer .copyright {
+width: 100%;
+}
+footer .copyright p {
+padding: 0;
+text-align: center;
+}
+footer .sns {
+width: 100%;
+}
+}
+
+.box_business_kw{
+  text-align:center;
+  margin:40px 80px;
+height: 30px;
+  border-style: none;
+border-radius: 20px 20px 20px 20px;
+  background-color: #FFFFFF;
+}
+
+.box_business_kw p{
+font-size: small;
+color: rgba(53,51,51,1.00);
+}
